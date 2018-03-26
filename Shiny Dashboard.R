@@ -42,7 +42,6 @@ header <- dashboardHeader(
 #  )
 #)
 
-
 # Create header with task menus
 #header <- dashboardHeader(
 #  title = "Title Header",
