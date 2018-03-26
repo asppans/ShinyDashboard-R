@@ -71,16 +71,16 @@ sidebar <- dashboardSidebar(
 
 
 #Create body with the tab
-body <-	dashboardBody(
-  tabItems(
-    tabBox(
-      tabPanel(title = "Dashboard", sliderInput("i", "l", 1, 100, 25))
-      #tabPanel(title = "iiiiinputs")
-      # tabItem(tabName	=	"dashboard", tabPanel("Dashboard"), title("Dashboardddd")),
-      # tabItem(tabName	=	"inputs", tabPanel("Inputs"), title("iiiiinputs"))
-    )
-  )
-)
+# body <-	dashboardBody(
+#   tabItems(
+#     tabBox(
+#       tabPanel(title = "Dashboard", sliderInput("i", "l", 1, 100, 25))
+#       #tabPanel(title = "iiiiinputs")
+#       # tabItem(tabName	=	"dashboard", tabPanel("Dashboard"), title("Dashboardddd")),
+#       # tabItem(tabName	=	"inputs", tabPanel("Inputs"), title("iiiiinputs"))
+#     )
+#   )
+# )
 
 
 #Create tab boxes
