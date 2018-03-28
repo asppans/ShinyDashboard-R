@@ -84,19 +84,16 @@ sidebar <- dashboardSidebar(
 
 
 #Create tab boxes
-# body <- dashboardBody(
-#   # Create a tabBox
-#   tabItems(
-#     tabItem(
-#       tabName = "dashboard",
-#       tabBox(
-#         title="International Space Station Fun Facts"),
-#       tabPanel("Fun Fact 1"),
-#       tabPanel("Fun Fact 2")
-#     ),
-#     tabItem(tabName = "inputs")
-#   )
-# )
+ body <- dashboardBody(
+   # Create a tabBox
+   tabItems(
+     tabItem(
+       tabName = "dashboard",
+       fluidRow(
+        box(title="box1 title", status = "primary", solidHeader = 1, plotOutput("histogram")),
+        box(title="box2 title", status = "primary", solidHeader = 1, plotOutput("histogram"))
+     )))
+ )
 # Create the UI using the header, sidebar, and body
 ui <- dashboardPage(header, sidebar, body)
 
