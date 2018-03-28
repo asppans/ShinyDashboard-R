@@ -90,7 +90,7 @@ sidebar <- dashboardSidebar(
      tabItem(
        tabName = "dashboard",
        fluidRow(
-        box(title="box1 title", status = "primary", solidHeader = 1, plotOutput("histogram")),
+        box(title="Histogram", status = "primary", solidHeader = 1, plotOutput("histogram")),
         box(title="Controls", status = "warning", solidHeader = 1, 
             sliderInput("bins", "Number of Breaks", 1, 100, 50), 
             textInput("text_input","Search Opportunities", value="123456" ) 
