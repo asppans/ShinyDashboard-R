@@ -91,7 +91,10 @@ sidebar <- dashboardSidebar(
        tabName = "dashboard",
        fluidRow(
         box(title="box1 title", status = "primary", solidHeader = 1, plotOutput("histogram")),
-        box(title="box2 title", status = "primary", solidHeader = 1, plotOutput("histogram"))
+        box(title="Controls", status = "warning", solidHeader = 1, 
+            sliderInput("bins", "Number of Breaks", 1, 100, 50), 
+            textInput("text_input","Search Opportunities", value="123456" ) 
+        )
      )))
  )
 # Create the UI using the header, sidebar, and body
