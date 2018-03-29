@@ -82,7 +82,6 @@ sidebar <- dashboardSidebar(
 #   )
 # )
 
-
 #Create tab boxes
  body <- dashboardBody(
    # Create a tabBox
@@ -97,6 +96,8 @@ sidebar <- dashboardSidebar(
         )
      )))
  )
+ 
+ 
 # Create the UI using the header, sidebar, and body
 ui <- dashboardPage(header, sidebar, body)
 
