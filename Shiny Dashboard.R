@@ -13,7 +13,7 @@ library(shinydashboard)
 
 # Create header with messages, notifications, task menus
 header <- dashboardHeader(
-  title = "Title Header",
+  title = "New Title Header",
   dropdownMenu(
   type = "messages",
     messageItem(from = "Nasa Update", message = "You can view the International Space Station!", href = "https://spotthestation.nasa.gov/sightings/"),
